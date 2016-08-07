@@ -1,6 +1,6 @@
 Default CentOS (7.2) server setup:
 
-* Does a YUM update and installs: *
+* Does a YUM update and installs:
 
     - curl
     - htop
@@ -10,17 +10,17 @@ Default CentOS (7.2) server setup:
     - firewalld
     - mosh
 
-* Opens firewall ports for: *
+* Opens firewall ports for:
 
     - ssh
     - mosh
 
-* Create user: *
+* Create user:
 
    - jerome
    - sets up ssh keys for connectivity
 
-* SSH: *
+* SSH:
 
    - disables Root login
    - disables password logins
