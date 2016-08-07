@@ -1,0 +1,2 @@
+# Set UTF-8 for mosh to work
+- shell: localectl set-locale LANG=en_ZA.utf8

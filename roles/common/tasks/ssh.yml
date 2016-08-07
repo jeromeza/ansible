@@ -1,0 +1,13 @@
+- name: Set up authorized_keys for the jerome user
+  authorized_key: user=jerome key="{{ item }}"
+  with_file:
+    - roles/common/files/ssh/jerome/id_rsa.pub
+
+- name: sshd configuration file update
+  template: src=roles/common/templates/ssh/sshd_config.j2
+      dest=/etc/ssh/sshd_config
+      backup=yes
+      owner=0 group=0 mode=0644
+      validate='/usr/sbin/sshd -T -f %s'
+  notify:
+    - restart sshd

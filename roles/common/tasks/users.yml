@@ -1,0 +1,4 @@
+# Add the jerome user
+# Password hash created by python -c "from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.encrypt(getpass.getpass())"
+# Requires: pip and passlib
+- user: name=jerome password="{{ ssh_password }}"

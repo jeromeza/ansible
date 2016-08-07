@@ -1,0 +1,4 @@
+ssh_password: "$6$rounds=656000$6QO5AphrcnKnFQ/L$.u0U47vz8GIR0vvlxgeWSphQVOpDLjTty2zpVbKAsJUT71hDopdJTIzmja/Nq/stNXn.vaLvaCIOqNwsyXeum/"
+PermitRootLogin: "no"
+PasswordAuthentication: "no"
+UsePAM: "no"

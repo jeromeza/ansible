@@ -1,0 +1,14 @@
+- shell: systemctl enable firewalld
+  register: result
+
+- shell: systemctl start firewalld
+  register: result
+
+- shell: firewall-cmd --add-port 60000-61000/udp --permanent
+  register: result
+
+- shell: firewall-cmd --add-port 22/tcp --permanent
+  register: result
+
+- shell: firewall-cmd --reload
+  register: result
